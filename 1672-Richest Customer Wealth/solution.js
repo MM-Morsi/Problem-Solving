@@ -61,5 +61,9 @@ console.log(animals.slice(1, 3)); // takes from index 1 to 3 (not including 3)
 // method executes a user-supplied "reducer" callback function on each element of the array
 // in order, passing in the return value from the calculation on the preceding element
 const array = [1, 2, 3, 4, 5];
-console.log(array.reduce((a, b) => a + b, 0)); // sum of array
+initialValue = 20;
+console.log(array.reduce((a, b) => a + b, initialValue)); // sum of array + initial value
+console.log(array.reduce((a, b) => a + b)); // sum of array only
+console.log(array.reduce((a, b) => a * b, initialValue)); // product of array * initial value 
+
 
