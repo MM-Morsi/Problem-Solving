@@ -63,5 +63,3 @@ console.log(animals.slice(1, 3)); // takes from index 1 to 3 (not including 3)
 const array = [1, 2, 3, 4, 5];
 console.log(array.reduce((a, b) => a + b, 0)); // sum of array
 
-// Testing git hub changes 
-console.log("test")
