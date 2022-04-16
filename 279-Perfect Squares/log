@@ -1,0 +1,7 @@
+First soltuion in script.js is wrong 
+We get the biggest squares first not  the least number 
+
+example 
+12 = 9 + 1 + 1 + 1 - wrong solution 
+12 = 4 + 4 + 4 - correct future solution 
+
