@@ -45,3 +45,35 @@ const returnNumbers = function (num, numbers) {
 let numbers = []
 testNum(returnNumbers(13, numbers));
 
+//  Second trial
+const findAllPerfectSquares = function (num, numbers) {
+    if (num === 0) {
+        return numbers;
+    }
+    if (isSquare(num)) {
+        numbers.push(num);
+    }
+    findAllPerfectSquares(num - 1, numbers);
+    return numbers;
+}
+
+numbers = []
+testNum(findAllPerfectSquares(12, numbers));
+
+// Now we need to find the least numbers that are perfect squares and sum up to the given number
+// Still not enough. We are ignoring the possibility of replication
+// Also not good for normal cases like 7 = 4 + 1 + 1 + 1
+// const findAllSumCombinations = function (numbers, num) {
+//     let combinations = [];
+//     for (let i = 0; i < numbers.length; i++) {
+//         for (let j = 0; j < numbers.length; j++) {
+//             if (numbers[i] + numbers[j] === num) {
+//                 combinations.push([numbers[i], numbers[j]]);
+//             }
+//         }
+//     }
+//     return combinations;
+// }
+
+// numbers = []
+// testNum(findAllSumCombinations(findAllPerfectSquares(7, numbers), 7));
