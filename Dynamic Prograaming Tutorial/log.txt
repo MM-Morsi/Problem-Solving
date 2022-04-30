@@ -1,0 +1,25 @@
+## What is Fib
+fib(n): 1, 1, 2, 3, 5, 8, 13, 21, 34  
+new = prev + prevV
+
+## Weak implementation
+const fib = (n) => {
+    if (n <= 2) {
+        return 1;
+    }
+    return fib(n - 1) + fib(n - 2);
+}
+
+fib(50): too long 
+Time Complexity: 2^n 
+- fib(n-1) --> O(n)
+- fib(n-2) --> 1/2 O(n) = O(n)
+- O(2^n): check images 
+Space Complexity
+- Different than the time complexity 
+- one branch --> o(n) 
+    - returning = pop out of the stack 
+    - once you get back from the base (leaf) you remove a space in stack 
+- Space stays: n (depth of the tree)
+## Better implementation 
+
